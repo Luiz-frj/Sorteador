@@ -28,4 +28,6 @@ class Draw(private val border: Int = 0){
     fun getLowBorder() = strategy.getLowBorder();
 
     fun getHighBorder() = strategy.getHighBorder();
+
+    fun isFull() = border == history.size;
 }

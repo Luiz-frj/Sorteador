@@ -38,8 +38,10 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
 
             binding.buttonDraw -> {
-                binding.textviewExit.text = draw.getNumber().toString();
-                updateListview();
+                if(!draw.isFull()){
+                    binding.textviewExit.text = draw.getNumber().toString();
+                    updateListview();
+                }
             }
         }
     }
