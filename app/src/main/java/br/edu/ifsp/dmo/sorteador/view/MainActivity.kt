@@ -21,10 +21,6 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         setClickListener();
     }
 
-    private fun setClickListener() {
-        TODO("Not yet implemented")
-    }
-
     override fun onClick(v: View) {
         when(v){
             binding.buttonUseLimit -> {
@@ -48,7 +44,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         }
     }
 
-    private fun setClicListener(){
+    private fun setClickListener(){
         binding.buttonDraw.setOnClickListener(this);
         binding.buttonUseLimit.setOnClickListener(this);
     }
